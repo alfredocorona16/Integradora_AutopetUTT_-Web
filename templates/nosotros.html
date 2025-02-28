@@ -1,0 +1,201 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Autopet UTT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #6B3E15;
+        }
+
+        .contact-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            margin-right: 20px;
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn {
+            background: #6B3E15;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: #54300E;
+        }
+
+        .logo-container {
+            background: #D79C64;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            width: 350px;
+        }
+
+        .logo-container img {
+            max-width: 100%;
+        }
+
+        .footer {
+            background: #1E1E1E;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            font-size: 14px;
+        }
+
+        .footer-column {
+            margin: 10px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .language-selector {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        .language-selector select {
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>CONTACTANOS</h1>
+    </div>
+
+    <div class="contact-section">
+        <div class="form-container">
+            <h2>Contáctanos</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" placeholder="Escribe tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="ejemplo@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Pregunta</label>
+                    <textarea id="message" rows="4" placeholder="Escribe tu pregunta o comentario"></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+    <img src="../static/img/paw.png" class="paw-prints paw1">
+    <img src="../static/img/paw.png" class="paw-prints paw2">
+    <img src="../static/img/paw.png" class="paw-prints paw3">
+    <img src="../static/img/paw.png" class="paw-prints paw4">
+    <img src="../static/img/paw.png" class="paw-prints paw5">
+    <img src="../static/img/paw.png" class="paw-prints paw6">
+    <img src="../static/img/paw.png" class="paw-prints paw7">
+    </div>
+
+        <div class="logo-container">
+            <img src="logo.png" alt="Autopet UTT">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-column">
+            <p>© 2025 AUTOPET UTT. Todos los derechos reservados.</p>
+        </div>
+        <div class="footer-column">
+            <h4>Product</h4>
+            <a href="#">Productos</a><br>
+            <a href="#">Precios</a><br>
+            <a href="#">Blog</a>
+        </div>
+        <div class="footer-column">
+            <h4>Company</h4>
+            <a href="#">Acerca de Nosotros</a><br>
+            <a href="#">FAQ</a><br>
+            <a href="#">Carreras</a>
+        </div>
+        <div class="footer-column">
+            <h4>Síguenos</h4>
+            <p>Tlaxcala, México</p>
+            <p>contacto@autopetutt.com</p>
+            <p>(246) 999-9999</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+{% endblock %}

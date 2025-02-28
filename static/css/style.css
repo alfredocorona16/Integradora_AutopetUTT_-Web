@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #F3DCC3;
+}
+
+nav {
+    background-color: #aea390;
+    position: relative;
+    padding: 7px;
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    src:url(../img/logoAutopet.jpg);
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(174, 163, 144, 0.9);
+    transition: max-height 0.3s ease-in-out;
+    max-height: none;
+    overflow: hidden;
+}
+
+nav ul.show {
+    max-height: 500px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li.logo {
+    margin-right: auto;
+    size: 25;
+}
+
+nav ul li.logo img {
+    height: 50px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ac7e50;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    nav .menu-icon {
+        display: block;
+    }
+    nav ul {
+        flex-direction: column;
+        max-height: 0;
+    }
+    nav ul.show {
+        display: flex;
+    }
+    nav ul li {
+        text-align: center;
+        width: 100%;
+    }
+    .qr-code {
+        width: 150px;
+    }
+}
+.qr-code {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+} */
+
+.container {
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 210px;
+    max-width:1200px;
+    width: 450vh;
+    padding:99px;
+    position: relative;
+}
+
+.text-content {
+    max-width: 40%;
+    font-size: 20;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 8px;
+    display:flex;
+}
+
+p {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #444;
+}
+
+.qr-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.qr-container button {
+    background-color: #c48f5a;
+    color: white;
+    padding: 30px 15px;
+    border: none;
+    width: 250px;
+    height: 50px;
+    border-radius: 999px;    
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.qr-container img {
+    width: 180px;
+    height: 180px;
+}
+
+.image-content {
+    max-width: 90%;
+    position: relative;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    z-index: 98;
+}
+
+.paw-prints {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    opacity: 0.5;
+    z-index: 97;
+}
+
+.paw1 { top: 20%; left: 5%; }
+.paw2 { bottom: 15%; left: 25%; }
+.paw3 { top: 30%; right: 5%; }
+.paw4 { bottom: 5%; right: 10%; }
+.paw5 { bottom: 10%; left: 5%; }
+.paw6 { bottom: 48%; right: 50%; }
+.paw7 { top: 69%; right: 42%; }
